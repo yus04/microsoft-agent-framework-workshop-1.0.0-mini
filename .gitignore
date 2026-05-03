@@ -26,8 +26,15 @@ ENV/
 .vscode/settings.json
 .idea/
 
+# foundry
+.foundry/
+
 # macOS
 .DS_Store
 
 # ログ
 *.log
+
+# Hosted Agent 関連
+agent_app.py
+Dockerfile

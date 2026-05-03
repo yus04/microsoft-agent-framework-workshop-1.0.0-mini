@@ -11,7 +11,7 @@
 - Python 関数や MCP を使ったカスタムツールの定義
 - シングルエージェントの構築（ツールなし／MCP ツールあり／Agent Skills あり）
 - Azure AI Search を活用した RAG パターンの実装
-- Azure AI Foundry への Hosted Agent デプロイ
+- Microsoft Foundry への Hosted Agent デプロイ
 - Foundry Agent Service を使ったエージェント構築
 - HandoffBuilder によるマルチエージェントシステム
 - SequentialBuilder / ConcurrentBuilder によるワークフロー構築
@@ -30,8 +30,8 @@
 | 04 | `04_single_agent_mcp.ipynb` | MCP ツールを持つシングルエージェントを構築し、リアルタイムデータにアクセスする |
 | 05 | `05_single_agent_skills.ipynb` | SkillsProvider と SKILL.md を使った Progressive Disclosure パターンによる Agent Skills |
 | 06 | `06_ai_search_agent.ipynb` | Azure AI Search を検索ツールとして統合した RAG エージェントを構築する |
-| 07 | `07_hosted_agent_deploy.ipynb` | azure-ai-projects SDK を使って Azure AI Foundry に Hosted Agent をデプロイする |
-| 08 | `08_foundry_agent_service.ipynb` | FoundryChatClient で Azure AI Foundry Agent Service を使うエージェントを構築する |
+| 07 | `07_hosted_agent_deploy.ipynb` | azure-ai-projects SDK を使って Microsoft Foundry に Hosted Agent をデプロイする |
+| 08 | `08_foundry_agent_service.ipynb` | FoundryChatClient で Microsoft Foundry Agent Service を使うエージェントを構築する |
 | 09 | `09_multi_agent.ipynb` | HandoffBuilder でコーディネーター＋専門エージェントのマルチエージェントシステムを構築する |
 | 10 | `10_workflow.ipynb` | SequentialBuilder（順次）と ConcurrentBuilder（並列）でエージェントワークフローを構築する |
 
@@ -41,9 +41,10 @@
 
 - Python 3.11 以上
 - Azure サブスクリプション（Azure OpenAI Service へのアクセス）
-- Azure OpenAI にデプロイされたモデル（`gpt-4.1-mini` など）
+- Azure OpenAI にデプロイされたモデル（`gpt-5-nano` など）
 - 06：Azure AI Search リソース（Free または Basic プラン）
-- 07〜08：[Azure AI Foundry](https://ai.azure.com) プロジェクトおよびモデルデプロイ
+- 07: Azure CLI (ACR の操作時に利用)
+- 07〜08：[Microsoft Foundry](https://ai.azure.com) プロジェクトおよびモデルデプロイ
 
 ---
 
@@ -132,7 +133,7 @@ microsoft-agent-framework-workshop-1.0.0-mini/
 
 - [Microsoft Agent Framework](https://github.com/microsoft/agent-framework) — エージェント構築フレームワーク
 - [Azure OpenAI Service](https://learn.microsoft.com/azure/ai-services/openai/) — LLM バックエンド
-- [Azure AI Foundry](https://ai.azure.com/) — AI プロジェクト管理・エージェントサービス
+- [Microsoft Foundry](https://ai.azure.com/) — AI プロジェクト管理・エージェントサービス
 - [Azure AI Search](https://learn.microsoft.com/azure/search/) — ドキュメント検索・RAG
 - [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) — ツール統合プロトコル
 - [FastMCP](https://github.com/jlowin/fastmcp) — MCP サーバー実装ライブラリ
