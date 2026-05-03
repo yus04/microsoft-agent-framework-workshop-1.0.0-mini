@@ -1,0 +1,28 @@
+# Microsoft Agent Framework - Tutorial Requirements
+# ================================================
+# Install all dependencies: pip install -r requirements.txt
+
+# Core Agent Framework
+agent-framework==1.0.0
+agent-framework-foundry==1.0.0
+agent-framework-openai==1.0.0
+
+# Azure AI & OpenAI
+openai
+azure-ai-projects
+azure-identity
+azure-search-documents
+azure-core
+
+# FastMCP Server
+fastmcp
+uvicorn[standard]
+
+# Type Validation
+pydantic
+
+# Environment Management
+python-dotenv
+
+# Jupyter Notebook
+ipykernel
